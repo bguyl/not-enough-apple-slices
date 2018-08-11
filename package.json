@@ -1,0 +1,32 @@
+{
+  "name": "not-enough-apple-slices",
+  "title": "🥧 Not enough apple slices 🥧 😐😐😐",
+  "version": "0.1.0",
+  "description": "A game for the #LD42 jam. Make an apple pie !",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "serve --single ./dist",
+    "serve": "webpack-dev-server --open --config .config/webpack.config.js",
+    "build": "webpack-cli --config .config/webpack.config.js",
+    "lint": "tslint -p ./tsconfig.json -c ./tslint.json"
+  },
+  "author": "Bastien Guyl <bastien@guyl.me>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "phaser": "^3.7.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "serve": "^9.4.2",
+    "ts-loader": "^4.3.0",
+    "tslint": "^5.10.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
