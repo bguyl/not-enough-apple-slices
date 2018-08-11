@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const title = require("../package.json").title;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
@@ -43,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({title: title}),
-    new CopyWebpackPlugin([{from: './static', to: 'static'}]),
+    // new CopyWebpackPlugin([{from: './static', to: 'static'}]),
     new webpack.DefinePlugin({
       'CANVAS_RENDERER': JSON.stringify(true),
       'WEBGL_RENDERER': JSON.stringify(true)
